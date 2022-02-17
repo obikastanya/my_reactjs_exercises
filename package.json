@@ -1,0 +1,22 @@
+{
+  "name": "vendor",
+  "version": "1.0.0",
+  "description": "dependencies package",
+  "main": "like_button.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obikastanya/my_reactjs_exercises.git"
+  },
+  "author": "obi kastanya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obikastanya/my_reactjs_exercises/issues"
+  },
+  "homepage": "https://github.com/obikastanya/my_reactjs_exercises#readme",
+  "dependencies": {
+    "terser": "^5.10.0"
+  }
+}

@@ -66,3 +66,5 @@ function Avatar( props ) {
         />
     )
 }
+
+// react menganut prinsip pure function, yaitu fungsi yang tidak value dari inputnya

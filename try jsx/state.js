@@ -20,6 +20,21 @@ class Clock extends React.Component {
         this.state = { date: new Date() }
 
     }
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.tick(),
+            1000
+        )
+    }
+    componentWillUnmount() {
+        clearInterval( this.timerID )
+
+    }
+    tick() {
+        this.setState( {
+            date: new Date()
+        } )
+    }
     render() {
         return (
             <div>
@@ -37,3 +52,8 @@ function tick() {
     )
 }
 setInterval( tick, 1000 )
+
+// jika kita ingin melakukan sesuatu saat element pertama kali
+//  dibuat atau saat dom dihapus kita dapat menambahkan fungsi pada class, yaitu mount dan unmounts.
+// method tersebut disebut lifecycle methods.
+

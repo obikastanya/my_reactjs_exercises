@@ -20,17 +20,41 @@ function Welcome( props ) {
 // )
 
 
-function App() {
+// function App() {
+//     return (
+//         <div>
+//             <Welcome name="Obi" />
+//             <Welcome name="John" />
+//             <Welcome name="Marry" />
+//         </div>
+//     )
+// }
+
+// ReactDOM.render(
+//     <App />,
+//     document.getElementById( 'root' )
+// )
+
+// props adalah attribute yang menyimpan value dari 
+// tag tertentu, mirip seperti attribute pada tag html.
+
+function Comment( props ) {
     return (
-        <div>
-            <Welcome name="Obi" />
-            <Welcome name="John" />
-            <Welcome name="Marry" />
+        <div className="Comment">
+            <div className="UserInfo">
+                <img className="Avatar"
+                    src={props.author.avatarUrl}
+                    alt={props.author.name}
+                />
+
+                <div className="UserInfo-name">
+                    {props.author.name}
+                </div>
+            </div>
+            <div className="Comment-text">
+                {props.text}
+            </div>
+            <div className="Comment-date"> {props.date}</div>
         </div>
     )
 }
-
-ReactDOM.render(
-    <App />,
-    document.getElementById( 'root' )
-)

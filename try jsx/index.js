@@ -40,3 +40,5 @@ function tick() {
         document.getElementById( 'root' ) )
 }
 setInterval( tick, 1000 )
+
+// saat melakukan update, react dom membandingkan element sebelumnya dan hanya memperbarui element yang diperlukan.
